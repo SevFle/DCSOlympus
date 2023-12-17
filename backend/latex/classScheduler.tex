@@ -1,0 +1,80 @@
+\hypertarget{classScheduler}{}\doxysection{Scheduler Class Reference}
+\label{classScheduler}\index{Scheduler@{Scheduler}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classScheduler_a0645cad5ebdc9b228fda0038578ec796}\label{classScheduler_a0645cad5ebdc9b228fda0038578ec796}} 
+{\bfseries Scheduler} (lua\+\_\+\+State $\ast$L)
+\item 
+\mbox{\Hypertarget{classScheduler_abb36306dfcdbb496cc14313d0d794330}\label{classScheduler_abb36306dfcdbb496cc14313d0d794330}} 
+void {\bfseries append\+Command} (\mbox{\hyperlink{classCommand}{Command}} $\ast$command)
+\item 
+\mbox{\Hypertarget{classScheduler_a3966724c85348c28f46bf5cc3922f4ae}\label{classScheduler_a3966724c85348c28f46bf5cc3922f4ae}} 
+void {\bfseries execute} (lua\+\_\+\+State $\ast$L)
+\item 
+\mbox{\Hypertarget{classScheduler_a89de7c1c2105924348e7a7b0228cbabb}\label{classScheduler_a89de7c1c2105924348e7a7b0228cbabb}} 
+void {\bfseries handle\+Request} (string key, json\+::value value, string username, json\+::value \&answer)
+\item 
+\mbox{\Hypertarget{classScheduler_a0f95ea5f38b1b0108d0098106baf53ff}\label{classScheduler_a0f95ea5f38b1b0108d0098106baf53ff}} 
+bool {\bfseries check\+Spawn\+Points} (int spawn\+Points, string coalition)
+\item 
+\mbox{\Hypertarget{classScheduler_a979380d8a806da0bc9069af5f6b93e04}\label{classScheduler_a979380d8a806da0bc9069af5f6b93e04}} 
+bool {\bfseries is\+Command\+Executed} (string command\+Hash)
+\item 
+\mbox{\Hypertarget{classScheduler_ad2c1693810ebf9c4d366b25948bc6c13}\label{classScheduler_ad2c1693810ebf9c4d366b25948bc6c13}} 
+void {\bfseries set\+Frame\+Rate} (double new\+Frame\+Rate)
+\item 
+\mbox{\Hypertarget{classScheduler_a97e1ff9ad0d4e0a90101287871c9639d}\label{classScheduler_a97e1ff9ad0d4e0a90101287871c9639d}} 
+void {\bfseries set\+Restrict\+Spawns} (bool new\+Restrict\+Spawns)
+\item 
+\mbox{\Hypertarget{classScheduler_a985937d52deb5cb5b03c376c05a06e21}\label{classScheduler_a985937d52deb5cb5b03c376c05a06e21}} 
+void {\bfseries set\+Restrict\+To\+Coalition} (bool new\+Restrict\+To\+Coalition)
+\item 
+\mbox{\Hypertarget{classScheduler_a28fdb4ae2c783bc5db0a40e3fc7fd94c}\label{classScheduler_a28fdb4ae2c783bc5db0a40e3fc7fd94c}} 
+void {\bfseries set\+Setup\+Time} (unsigned int new\+Setup\+Time)
+\item 
+\mbox{\Hypertarget{classScheduler_a9da707eaeff47573bd754d003f5e0f6c}\label{classScheduler_a9da707eaeff47573bd754d003f5e0f6c}} 
+void {\bfseries set\+Blue\+Spawn\+Points} (int new\+Blue\+Spawn\+Points)
+\item 
+\mbox{\Hypertarget{classScheduler_abadd86b2a9c7350f6c1c109c36d51e58}\label{classScheduler_abadd86b2a9c7350f6c1c109c36d51e58}} 
+void {\bfseries set\+Red\+Spawn\+Points} (int new\+Red\+Spawn\+Points)
+\item 
+\mbox{\Hypertarget{classScheduler_a4dc3a6b95740df1d909e8f11d496cc3b}\label{classScheduler_a4dc3a6b95740df1d909e8f11d496cc3b}} 
+void {\bfseries set\+Eras} (vector$<$ string $>$ new\+Eras)
+\item 
+\mbox{\Hypertarget{classScheduler_a92bcadaf26aa25d820b876009cc70bd3}\label{classScheduler_a92bcadaf26aa25d820b876009cc70bd3}} 
+void {\bfseries set\+Command\+Mode\+Options} (json\+::value new\+Options)
+\item 
+\mbox{\Hypertarget{classScheduler_aa3041b4156ce1251d5efca7c6032db10}\label{classScheduler_aa3041b4156ce1251d5efca7c6032db10}} 
+int {\bfseries get\+Frame\+Rate} ()
+\item 
+\mbox{\Hypertarget{classScheduler_aca0bdc0b3fb648e09fa013728a2753c3}\label{classScheduler_aca0bdc0b3fb648e09fa013728a2753c3}} 
+int {\bfseries get\+Load} ()
+\item 
+\mbox{\Hypertarget{classScheduler_ad9d8a6a53233ff012c25383bdf18ebb7}\label{classScheduler_ad9d8a6a53233ff012c25383bdf18ebb7}} 
+bool {\bfseries get\+Restrict\+Spawns} ()
+\item 
+\mbox{\Hypertarget{classScheduler_a3980c02575fc9b7f98536d0b9f432a9b}\label{classScheduler_a3980c02575fc9b7f98536d0b9f432a9b}} 
+bool {\bfseries get\+Restrict\+To\+Coalition} ()
+\item 
+\mbox{\Hypertarget{classScheduler_ae4d809675579ca7c4f2e2a8276685822}\label{classScheduler_ae4d809675579ca7c4f2e2a8276685822}} 
+unsigned int {\bfseries get\+Setup\+Time} ()
+\item 
+\mbox{\Hypertarget{classScheduler_a002586f77fdaa4d6adb370dfb9eef015}\label{classScheduler_a002586f77fdaa4d6adb370dfb9eef015}} 
+int {\bfseries get\+Blue\+Spawn\+Points} ()
+\item 
+\mbox{\Hypertarget{classScheduler_af6ac92bc8a6861612195b0a97a86bf7c}\label{classScheduler_af6ac92bc8a6861612195b0a97a86bf7c}} 
+int {\bfseries get\+Red\+Spawn\+Points} ()
+\item 
+\mbox{\Hypertarget{classScheduler_a5711594418d9dcaa0a4dc0f5b675bdd8}\label{classScheduler_a5711594418d9dcaa0a4dc0f5b675bdd8}} 
+vector$<$ string $>$ {\bfseries get\+Eras} ()
+\item 
+\mbox{\Hypertarget{classScheduler_ae3918742008e9a3c48e7a53326b7e715}\label{classScheduler_ae3918742008e9a3c48e7a53326b7e715}} 
+json\+::value {\bfseries get\+Command\+Mode\+Options} ()
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+core/include/scheduler.\+h\item 
+core/src/scheduler.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,22 @@
+digraph "Helicopter"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="Helicopter",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="AirUnit",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAirUnit.html",tooltip=" "];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Unit",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classUnit.html",tooltip=" "];
+  Node4 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" generalSettings" ,fontname="Helvetica"];
+  Node4 [label="DataTypes::GeneralSettings",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structDataTypes_1_1GeneralSettings.html",tooltip=" "];
+  Node5 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" formationOffset" ,fontname="Helvetica"];
+  Node5 [label="Offset",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structOffset.html",tooltip=" "];
+  Node6 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" radio" ,fontname="Helvetica"];
+  Node6 [label="DataTypes::Radio",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structDataTypes_1_1Radio.html",tooltip=" "];
+  Node3 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" missOnPurposeTarget" ,fontname="Helvetica"];
+  Node7 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" TACAN" ,fontname="Helvetica"];
+  Node7 [label="DataTypes::TACAN",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structDataTypes_1_1TACAN.html",tooltip=" "];
+  Node8 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" activeDestination\nposition\ntargetPosition" ,fontname="Helvetica"];
+  Node8 [label="Coords",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structCoords.html",tooltip=" "];
+}

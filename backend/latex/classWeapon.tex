@@ -1,0 +1,133 @@
+\hypertarget{classWeapon}{}\doxysection{Weapon Class Reference}
+\label{classWeapon}\index{Weapon@{Weapon}}
+
+
+Inheritance diagram for Weapon\+:
+% FIG 0
+
+
+Collaboration diagram for Weapon\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classWeapon_add38aa1ac6a9bd8367fca538b1c45fa0}\label{classWeapon_add38aa1ac6a9bd8367fca538b1c45fa0}} 
+{\bfseries Weapon} (json\+::value json, unsigned int ID)
+\item 
+\mbox{\Hypertarget{classWeapon_ae8377d9ed76067eb05d36ed0a8be0bac}\label{classWeapon_ae8377d9ed76067eb05d36ed0a8be0bac}} 
+void {\bfseries initialize} (json\+::value json)
+\item 
+\mbox{\Hypertarget{classWeapon_a1d1778f4739e603e475895e4e506e1b9}\label{classWeapon_a1d1778f4739e603e475895e4e506e1b9}} 
+void {\bfseries update} (json\+::value json, double dt)
+\item 
+\mbox{\Hypertarget{classWeapon_a1315888f6da525a549ef02ddd897aed1}\label{classWeapon_a1315888f6da525a549ef02ddd897aed1}} 
+unsigned int {\bfseries get\+ID} ()
+\item 
+\mbox{\Hypertarget{classWeapon_a7a6cdfd0acd5cb70a2750fa935f7d13e}\label{classWeapon_a7a6cdfd0acd5cb70a2750fa935f7d13e}} 
+void {\bfseries get\+Data} (stringstream \&ss, unsigned long long time)
+\item 
+\mbox{\Hypertarget{classWeapon_a67a071cdad637931de962500219fcf49}\label{classWeapon_a67a071cdad637931de962500219fcf49}} 
+void {\bfseries trigger\+Update} (unsigned char datum\+Index)
+\item 
+\mbox{\Hypertarget{classWeapon_ac0677759407d115eb83cee4d05e28507}\label{classWeapon_ac0677759407d115eb83cee4d05e28507}} 
+bool {\bfseries has\+Fresh\+Data} (unsigned long long time)
+\item 
+\mbox{\Hypertarget{classWeapon_a58fa4100a02c6deb88b12b6614078a91}\label{classWeapon_a58fa4100a02c6deb88b12b6614078a91}} 
+bool {\bfseries check\+Freshness} (unsigned char datum\+Index, unsigned long long time)
+\item 
+\mbox{\Hypertarget{classWeapon_a3cba118b96c58a42aa29e431c70bf2c8}\label{classWeapon_a3cba118b96c58a42aa29e431c70bf2c8}} 
+virtual void {\bfseries set\+Category} (string new\+Value)
+\item 
+\mbox{\Hypertarget{classWeapon_a4e0676d9ec0380f3cd6ce4d44e9332be}\label{classWeapon_a4e0676d9ec0380f3cd6ce4d44e9332be}} 
+virtual void {\bfseries set\+Alive} (bool new\+Value)
+\item 
+\mbox{\Hypertarget{classWeapon_a9b697c33fabb193e6ec7e720a404a320}\label{classWeapon_a9b697c33fabb193e6ec7e720a404a320}} 
+virtual void {\bfseries set\+Coalition} (unsigned char new\+Value)
+\item 
+\mbox{\Hypertarget{classWeapon_aa9127900460eb19462b57a772ac6c634}\label{classWeapon_aa9127900460eb19462b57a772ac6c634}} 
+virtual void {\bfseries set\+Name} (string new\+Value)
+\item 
+\mbox{\Hypertarget{classWeapon_aac29d96261b921e8b0471e3132823a77}\label{classWeapon_aac29d96261b921e8b0471e3132823a77}} 
+virtual void {\bfseries set\+Position} (\mbox{\hyperlink{structCoords}{Coords}} new\+Value)
+\item 
+\mbox{\Hypertarget{classWeapon_a2870a74724a3bb87f1205f3a55a9b55e}\label{classWeapon_a2870a74724a3bb87f1205f3a55a9b55e}} 
+virtual void {\bfseries set\+Speed} (double new\+Value)
+\item 
+\mbox{\Hypertarget{classWeapon_ab6a748308cbf47bf2123135516999b08}\label{classWeapon_ab6a748308cbf47bf2123135516999b08}} 
+virtual void {\bfseries set\+Heading} (double new\+Value)
+\item 
+\mbox{\Hypertarget{classWeapon_a0380b7872c9cf2e99979ba6f95f0bb30}\label{classWeapon_a0380b7872c9cf2e99979ba6f95f0bb30}} 
+virtual string {\bfseries get\+Category} ()
+\item 
+\mbox{\Hypertarget{classWeapon_a56c73701ec63dc16bba2170fa3d66e7b}\label{classWeapon_a56c73701ec63dc16bba2170fa3d66e7b}} 
+virtual bool {\bfseries get\+Alive} ()
+\item 
+\mbox{\Hypertarget{classWeapon_a44e32293c63304981f2d7c84d6138b24}\label{classWeapon_a44e32293c63304981f2d7c84d6138b24}} 
+virtual unsigned char {\bfseries get\+Coalition} ()
+\item 
+\mbox{\Hypertarget{classWeapon_a3529ee7ba572a73b34063e112d1ffbd4}\label{classWeapon_a3529ee7ba572a73b34063e112d1ffbd4}} 
+virtual string {\bfseries get\+Name} ()
+\item 
+\mbox{\Hypertarget{classWeapon_aa6d9b25e3cb2e72ebf845e765132666a}\label{classWeapon_aa6d9b25e3cb2e72ebf845e765132666a}} 
+virtual \mbox{\hyperlink{structCoords}{Coords}} {\bfseries get\+Position} ()
+\item 
+\mbox{\Hypertarget{classWeapon_aa377005403671b69dd0d0a8bd1ec2d68}\label{classWeapon_aa377005403671b69dd0d0a8bd1ec2d68}} 
+virtual double {\bfseries get\+Speed} ()
+\item 
+\mbox{\Hypertarget{classWeapon_af29db7cf10f329e16e16abb9f2e688a6}\label{classWeapon_af29db7cf10f329e16e16abb9f2e688a6}} 
+virtual double {\bfseries get\+Heading} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classWeapon_a2a4f95a3861eff1f996c8fcf0e5a913a}\label{classWeapon_a2a4f95a3861eff1f996c8fcf0e5a913a}} 
+void {\bfseries append\+String} (stringstream \&ss, const unsigned char \&datum\+Index, const string \&datum\+Value)
+\item 
+\mbox{\Hypertarget{classWeapon_af75068201b68e21e3303ba500e0d3506}\label{classWeapon_af75068201b68e21e3303ba500e0d3506}} 
+{\footnotesize template$<$typename T $>$ }\\void {\bfseries update\+Value} (T \&value, T \&new\+Value, unsigned char datum\+Index)
+\item 
+\mbox{\Hypertarget{classWeapon_a0d84807e1d486d69da0f8a87d7c159ab}\label{classWeapon_a0d84807e1d486d69da0f8a87d7c159ab}} 
+{\footnotesize template$<$typename T $>$ }\\void {\bfseries append\+Numeric} (stringstream \&ss, const unsigned char \&datum\+Index, T \&datum\+Value)
+\item 
+\mbox{\Hypertarget{classWeapon_a1fbd8fc776d47e56a4d7d80e7847bd69}\label{classWeapon_a1fbd8fc776d47e56a4d7d80e7847bd69}} 
+{\footnotesize template$<$typename T $>$ }\\void {\bfseries append\+Vector} (stringstream \&ss, const unsigned char \&datum\+Index, vector$<$ T $>$ \&datum\+Value)
+\item 
+\mbox{\Hypertarget{classWeapon_a5df2da7e1f735fd036e0018df71906f3}\label{classWeapon_a5df2da7e1f735fd036e0018df71906f3}} 
+{\footnotesize template$<$typename T $>$ }\\void {\bfseries append\+List} (stringstream \&ss, const unsigned char \&datum\+Index, list$<$ T $>$ \&datum\+Value)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classWeapon_a7dbbff64beab33b6b2f6c9de11b8e89e}\label{classWeapon_a7dbbff64beab33b6b2f6c9de11b8e89e}} 
+unsigned int {\bfseries ID}
+\item 
+\mbox{\Hypertarget{classWeapon_a2184062dbc09779561b14e470a284c0c}\label{classWeapon_a2184062dbc09779561b14e470a284c0c}} 
+string {\bfseries category}
+\item 
+\mbox{\Hypertarget{classWeapon_a0ec99b87cf5dd031a01f5dfc2dda5308}\label{classWeapon_a0ec99b87cf5dd031a01f5dfc2dda5308}} 
+bool {\bfseries alive} = false
+\item 
+\mbox{\Hypertarget{classWeapon_ace56cb80cf226a38a2377bd20d0c8ca6}\label{classWeapon_ace56cb80cf226a38a2377bd20d0c8ca6}} 
+unsigned char {\bfseries coalition} = NULL
+\item 
+\mbox{\Hypertarget{classWeapon_a6b683bce956944a128d3ee25a88c7ac1}\label{classWeapon_a6b683bce956944a128d3ee25a88c7ac1}} 
+string {\bfseries name} = \char`\"{}\char`\"{}
+\item 
+\mbox{\Hypertarget{classWeapon_a9b9c1d35ae24e0ef45004662456184fd}\label{classWeapon_a9b9c1d35ae24e0ef45004662456184fd}} 
+\mbox{\hyperlink{structCoords}{Coords}} {\bfseries position} = \mbox{\hyperlink{structCoords}{Coords}}(NULL)
+\item 
+\mbox{\Hypertarget{classWeapon_ae537a97d5faa9cf6a9a00a08e5072984}\label{classWeapon_ae537a97d5faa9cf6a9a00a08e5072984}} 
+double {\bfseries speed} = NULL
+\item 
+\mbox{\Hypertarget{classWeapon_a0160bd944bc596ac3f78adb2561ce705}\label{classWeapon_a0160bd944bc596ac3f78adb2561ce705}} 
+double {\bfseries heading} = NULL
+\item 
+\mbox{\Hypertarget{classWeapon_aba279db90c0b6ee8a2e4ffc9c569c6ce}\label{classWeapon_aba279db90c0b6ee8a2e4ffc9c569c6ce}} 
+map$<$ unsigned char, unsigned long long $>$ {\bfseries update\+Time\+Map}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+core/include/weapon.\+h\item 
+core/src/weapon.\+cpp\end{DoxyCompactItemize}

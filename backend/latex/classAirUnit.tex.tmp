@@ -1,0 +1,44 @@
+\hypertarget{classAirUnit}{}\doxysection{Air\+Unit Class Reference}
+\label{classAirUnit}\index{AirUnit@{AirUnit}}
+
+
+Inheritance diagram for Air\+Unit\+:
+% FIG 0
+
+
+Collaboration diagram for Air\+Unit\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classAirUnit_a1e1f815ed54b3a777496b7763532be02}\label{classAirUnit_a1e1f815ed54b3a777496b7763532be02}} 
+{\bfseries Air\+Unit} (json\+::value json, unsigned int ID)
+\item 
+\mbox{\Hypertarget{classAirUnit_af8a7f69d878a0517bb98a8198a522633}\label{classAirUnit_af8a7f69d878a0517bb98a8198a522633}} 
+virtual void {\bfseries set\+Defaults} (bool force=false)
+\item 
+\mbox{\Hypertarget{classAirUnit_a0039d6fded892fa740abeb2a0089cadd}\label{classAirUnit_a0039d6fded892fa740abeb2a0089cadd}} 
+virtual void {\bfseries set\+State} (unsigned char new\+State)
+\item 
+\mbox{\Hypertarget{classAirUnit_ac7072ddf5c1af4a11891b79a64d38fa5}\label{classAirUnit_ac7072ddf5c1af4a11891b79a64d38fa5}} 
+virtual void {\bfseries change\+Speed} (string change)=0
+\item 
+\mbox{\Hypertarget{classAirUnit_af2cb9528d4dee7f045930018651a9ee0}\label{classAirUnit_af2cb9528d4dee7f045930018651a9ee0}} 
+virtual void {\bfseries change\+Altitude} (string change)=0
+\item 
+\mbox{\Hypertarget{classAirUnit_a4e73356f40cb70ddd92b56aa8dacfc17}\label{classAirUnit_a4e73356f40cb70ddd92b56aa8dacfc17}} 
+virtual double {\bfseries get\+Destination\+Reached\+Threshold} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classAirUnit_a5cd000af43c17a1f41f1717d5110812e}\label{classAirUnit_a5cd000af43c17a1f41f1717d5110812e}} 
+virtual void {\bfseries AIloop} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+core/include/airunit.\+h\item 
+core/src/airunit.\+cpp\end{DoxyCompactItemize}

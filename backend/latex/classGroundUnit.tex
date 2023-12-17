@@ -1,0 +1,59 @@
+\hypertarget{classGroundUnit}{}\doxysection{Ground\+Unit Class Reference}
+\label{classGroundUnit}\index{GroundUnit@{GroundUnit}}
+
+
+Inheritance diagram for Ground\+Unit\+:
+% FIG 0
+
+
+Collaboration diagram for Ground\+Unit\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGroundUnit_aab8bec3c6f41571f056c0b7358462c38}\label{classGroundUnit_aab8bec3c6f41571f056c0b7358462c38}} 
+{\bfseries Ground\+Unit} (json\+::value json, unsigned int ID)
+\item 
+\mbox{\Hypertarget{classGroundUnit_a1d8efba2493f87f28720678b66a666bb}\label{classGroundUnit_a1d8efba2493f87f28720678b66a666bb}} 
+virtual void {\bfseries set\+State} (unsigned char new\+State)
+\item 
+\mbox{\Hypertarget{classGroundUnit_ac0f7af27e36e8da3e428a5bbd39d225d}\label{classGroundUnit_ac0f7af27e36e8da3e428a5bbd39d225d}} 
+virtual void {\bfseries set\+Defaults} (bool force=false)
+\item 
+\mbox{\Hypertarget{classGroundUnit_a98508d9bf9c66933bf01f0f8e57a9c8d}\label{classGroundUnit_a98508d9bf9c66933bf01f0f8e57a9c8d}} 
+virtual void {\bfseries change\+Speed} (string change)
+\item 
+\mbox{\Hypertarget{classGroundUnit_a65f25958dc57d65b99a49a4ab381cb11}\label{classGroundUnit_a65f25958dc57d65b99a49a4ab381cb11}} 
+virtual void {\bfseries set\+On\+Off} (bool new\+On\+Off, bool force=false)
+\item 
+\mbox{\Hypertarget{classGroundUnit_a4705688542594dc1396e08cc224ed025}\label{classGroundUnit_a4705688542594dc1396e08cc224ed025}} 
+virtual void {\bfseries set\+Follow\+Roads} (bool new\+Follow\+Roads, bool force=false)
+\item 
+\mbox{\Hypertarget{classGroundUnit_acba8193416cbb0f77ce742b93fc07442}\label{classGroundUnit_acba8193416cbb0f77ce742b93fc07442}} 
+void {\bfseries aim\+At\+Point} (\mbox{\hyperlink{structCoords}{Coords}} aim\+Target)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGroundUnit_ad17831feebf626509bce6dd138e97328}\label{classGroundUnit_ad17831feebf626509bce6dd138e97328}} 
+static void {\bfseries load\+Database} (string path)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGroundUnit_a65371cbd01c8b9484db4b825c1308273}\label{classGroundUnit_a65371cbd01c8b9484db4b825c1308273}} 
+virtual void {\bfseries AIloop} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGroundUnit_adaa28610f91d079db3fc24559c422a40}\label{classGroundUnit_adaa28610f91d079db3fc24559c422a40}} 
+static json\+::value {\bfseries database} = json\+::value()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+core/include/groundunit.\+h\item 
+core/src/groundunit.\+cpp\end{DoxyCompactItemize}

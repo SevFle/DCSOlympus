@@ -1,0 +1,44 @@
+\hypertarget{classCommand}{}\doxysection{Command Class Reference}
+\label{classCommand}\index{Command@{Command}}
+
+
+Inheritance diagram for Command\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCommand_a6e6568f1022cd3f3790af753a8dd92ce}\label{classCommand_a6e6568f1022cd3f3790af753a8dd92ce}} 
+{\bfseries Command} (function$<$ void(void)$>$ callback)
+\item 
+\mbox{\Hypertarget{classCommand_abbd1383cf9a5fcab90e65cb539b83460}\label{classCommand_abbd1383cf9a5fcab90e65cb539b83460}} 
+unsigned int {\bfseries get\+Priority} ()
+\item 
+\mbox{\Hypertarget{classCommand_a5f73edbf3040a616ac7449a76a40ce82}\label{classCommand_a5f73edbf3040a616ac7449a76a40ce82}} 
+virtual string {\bfseries get\+String} ()=0
+\item 
+\mbox{\Hypertarget{classCommand_adc7d4e0faff29206db987b1da15b7e22}\label{classCommand_adc7d4e0faff29206db987b1da15b7e22}} 
+virtual unsigned int {\bfseries get\+Load} ()=0
+\item 
+\mbox{\Hypertarget{classCommand_afa4efb128366f36c94e925b342ef9e00}\label{classCommand_afa4efb128366f36c94e925b342ef9e00}} 
+const string {\bfseries get\+Hash} ()
+\item 
+\mbox{\Hypertarget{classCommand_a73d376f0d26d346f1d1d7e0c0d6f8d3a}\label{classCommand_a73d376f0d26d346f1d1d7e0c0d6f8d3a}} 
+void {\bfseries execute\+Callback} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCommand_a037277bd0c74a30e1dada108d9e58896}\label{classCommand_a037277bd0c74a30e1dada108d9e58896}} 
+unsigned int {\bfseries priority} = Command\+Priority\+::\+LOW
+\item 
+\mbox{\Hypertarget{classCommand_acee44c5d76abce7147ebe824b7b1078a}\label{classCommand_acee44c5d76abce7147ebe824b7b1078a}} 
+const string {\bfseries hash} = random\+\_\+string(16)
+\item 
+\mbox{\Hypertarget{classCommand_a4a4cc83e19d8cba14230206828d2a1c2}\label{classCommand_a4a4cc83e19d8cba14230206828d2a1c2}} 
+function$<$ void(void)$>$ {\bfseries callback}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+core/include/commands.\+h\end{DoxyCompactItemize}

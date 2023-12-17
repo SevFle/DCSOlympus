@@ -1,0 +1,59 @@
+\hypertarget{classUnitsManager}{}\doxysection{Units\+Manager Class Reference}
+\label{classUnitsManager}\index{UnitsManager@{UnitsManager}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classUnitsManager_a69714599929fb024092ae4057cd29277}\label{classUnitsManager_a69714599929fb024092ae4057cd29277}} 
+{\bfseries Units\+Manager} (lua\+\_\+\+State $\ast$L)
+\item 
+\mbox{\Hypertarget{classUnitsManager_a4f2350685a03092f57fb399585c69404}\label{classUnitsManager_a4f2350685a03092f57fb399585c69404}} 
+map$<$ unsigned int, \mbox{\hyperlink{classUnit}{Unit}} $\ast$ $>$ \& {\bfseries get\+Units} ()
+\item 
+\mbox{\Hypertarget{classUnitsManager_ae510863de8ec22a1ad64fa42233ab9ea}\label{classUnitsManager_ae510863de8ec22a1ad64fa42233ab9ea}} 
+\mbox{\hyperlink{classUnit}{Unit}} $\ast$ {\bfseries get\+Unit} (unsigned int ID)
+\item 
+\mbox{\Hypertarget{classUnitsManager_a7eb9141d395eb5a30b74892e9c42f01c}\label{classUnitsManager_a7eb9141d395eb5a30b74892e9c42f01c}} 
+bool {\bfseries is\+Unit\+In\+Group} (\mbox{\hyperlink{classUnit}{Unit}} $\ast$unit)
+\item 
+\mbox{\Hypertarget{classUnitsManager_a65bd45acac23bafa82a46d648602794f}\label{classUnitsManager_a65bd45acac23bafa82a46d648602794f}} 
+bool {\bfseries is\+Unit\+Group\+Leader} (\mbox{\hyperlink{classUnit}{Unit}} $\ast$unit, \mbox{\hyperlink{classUnit}{Unit}} $\ast$\&leader)
+\item 
+\mbox{\Hypertarget{classUnitsManager_a0ca2949d56f1e9e0537bfd5413a38ab6}\label{classUnitsManager_a0ca2949d56f1e9e0537bfd5413a38ab6}} 
+\mbox{\hyperlink{classUnit}{Unit}} $\ast$ {\bfseries get\+Group\+Leader} (unsigned int ID)
+\item 
+\mbox{\Hypertarget{classUnitsManager_aa045a0e8715147cd7a730d8a102373bc}\label{classUnitsManager_aa045a0e8715147cd7a730d8a102373bc}} 
+\mbox{\hyperlink{classUnit}{Unit}} $\ast$ {\bfseries get\+Group\+Leader} (\mbox{\hyperlink{classUnit}{Unit}} $\ast$unit)
+\item 
+\mbox{\Hypertarget{classUnitsManager_a3e087a021309c0b81100f7c9f9de486e}\label{classUnitsManager_a3e087a021309c0b81100f7c9f9de486e}} 
+vector$<$ \mbox{\hyperlink{classUnit}{Unit}} $\ast$ $>$ {\bfseries get\+Group\+Members} (string group\+Name)
+\item 
+\mbox{\Hypertarget{classUnitsManager_aecc69ace91678000b335ea6eb3b3fa9b}\label{classUnitsManager_aecc69ace91678000b335ea6eb3b3fa9b}} 
+void {\bfseries update} (json\+::value \&mission\+Data, double dt)
+\item 
+\mbox{\Hypertarget{classUnitsManager_a196c16e76bd9eae90d35184f31147216}\label{classUnitsManager_a196c16e76bd9eae90d35184f31147216}} 
+void {\bfseries run\+AILoop} ()
+\item 
+\mbox{\Hypertarget{classUnitsManager_a57f4d340351f57ed939e1ccc94c324fa}\label{classUnitsManager_a57f4d340351f57ed939e1ccc94c324fa}} 
+void {\bfseries get\+Unit\+Data} (stringstream \&ss, unsigned long long time)
+\item 
+\mbox{\Hypertarget{classUnitsManager_af02236f3aff48b4b04c470cb3d34784c}\label{classUnitsManager_af02236f3aff48b4b04c470cb3d34784c}} 
+void {\bfseries delete\+Unit} (unsigned int ID, bool explosion, string explosion\+Type, bool immediate)
+\item 
+\mbox{\Hypertarget{classUnitsManager_aa92f8c19cfb1d1f839cc17416d8801a3}\label{classUnitsManager_aa92f8c19cfb1d1f839cc17416d8801a3}} 
+void {\bfseries acquire\+Control} (unsigned int ID)
+\item 
+\mbox{\Hypertarget{classUnitsManager_a1d086ef00660139ac971b322d7f03178}\label{classUnitsManager_a1d086ef00660139ac971b322d7f03178}} 
+void {\bfseries load\+Databases} ()
+\item 
+\mbox{\Hypertarget{classUnitsManager_a6fbb348ac93fea2857d046a2fed47ef4}\label{classUnitsManager_a6fbb348ac93fea2857d046a2fed47ef4}} 
+\mbox{\hyperlink{classUnit}{Unit}} $\ast$ {\bfseries get\+Closest\+Unit} (\mbox{\hyperlink{classUnit}{Unit}} $\ast$unit, unsigned char coalition, vector$<$ string $>$ categories, double \&distance)
+\item 
+\mbox{\Hypertarget{classUnitsManager_aed77922982e6a4618fcef732fa27ae15}\label{classUnitsManager_aed77922982e6a4618fcef732fa27ae15}} 
+map$<$ \mbox{\hyperlink{classUnit}{Unit}} $\ast$, double $>$ {\bfseries get\+Units\+In\+Range} (\mbox{\hyperlink{classUnit}{Unit}} $\ast$unit, unsigned char coalition, vector$<$ string $>$ categories, double range)
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+core/include/unitsmanager.\+h\item 
+core/src/unitsmanager.\+cpp\end{DoxyCompactItemize}
